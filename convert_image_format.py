@@ -1,8 +1,8 @@
 from PIL import Image
 import os
 
-src_path = r'D:\수업\212\컴퓨터비전\challenge05_Plant Disease Augmentation Classification\ComputerVisionProject1-master\vision'
-target_path = r'D:\수업\212\컴퓨터비전\3단계\code\data\plant_dataset'
+src_path = './data/vision'
+target_path = './data/plant_dataset'
 
 for split_type in os.listdir(src_path):
     if not os.path.exists(os.path.join(target_path, split_type)):
